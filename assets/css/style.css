@@ -1736,13 +1736,35 @@ body {
 * {
   box-sizing: border-box;
 }
+#hero1 {
+  width: 100%;
+  height: auto;
+  background: url(../img/faceBanner.gif) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  #hero1 {
+    background-attachment: fixed;
+  }
+}
+#hero1:before {
+  content: "";
+  background: rgba(6, 12, 34, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 
 #Event {
   font-family: 'Poppins', sans-serif;
-  background: url('../img/Untitled-3.gif') top center;
-  background-size: cover;
   padding: 3rem;
 }
+
 #Event h2{
   color: #83e6ff;
   text-shadow: 1px 0px 11px rgb(255, 251, 0);
