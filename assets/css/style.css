@@ -1739,7 +1739,7 @@ body {
 #hero1 {
   width: 100%;
   height: auto;
-  background: url(../img/faceBanner.gif) top center;
+  background: url(https://media.giphy.com/media/3o7TKMRZvKaODP4uwo/giphy.gif) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1757,6 +1757,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  backdrop-filter: saturate(180%) blur(10px);
 }
 
 
@@ -1766,8 +1767,28 @@ body {
 }
 
 #Event h2{
-  color: #83e6ff;
-  text-shadow: 1px 0px 11px rgb(255, 251, 0);
+  color: #ebf4f7;
+  /* text-shadow: 1px 0px 3px rgb(255, 251, 0); */
+  font-size: 2.75rem;
+  font-weight: normal;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 216, 41, 0.867), 0 0 40px #ff4d, 0 0 50px #ff4d, 0 0 60px #ff4d, 0 0 70px #ff4d, 0 0 80px #ff4d;
+  }
 }
 
 .cards{
