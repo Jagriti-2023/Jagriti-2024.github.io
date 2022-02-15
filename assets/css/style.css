@@ -425,7 +425,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/faceBanner.gif) top center;
+  background: url(https://media.giphy.com/media/UwUjpGKts0ULu/giphy.gif) top center;
+
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -443,6 +444,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
+  backdrop-filter: saturate(100%) blur(8px);
 }
 #hero .hero-container {
   position: absolute;
